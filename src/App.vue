@@ -9,6 +9,11 @@
 </template>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +23,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 15px;
 
   a {
     font-weight: bold;
@@ -26,6 +31,30 @@
 
     &.router-link-exact-active {
       color: #42b983;
+    }
+  }
+}
+.home {
+  .bg_logo {
+    padding: 20px;
+    background-color: #0d0e8d;
+    .logo {
+      width: 200px;
+    }
+  }
+  .bg_container {
+    height: 400px;
+    background-color: #11093a;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  div {
+    width: 50%;
+    margin: 0 auto;
+    h2 {
+      color: crimson;
     }
   }
 }
