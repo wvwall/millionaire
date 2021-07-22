@@ -6,6 +6,9 @@
     <div class="bg_container">
       <Container />
     </div>
+    <div class="container_answers">
+      <Answers />
+    </div>
   </div>
 </template>
 
@@ -13,6 +16,7 @@
 // @ is an alias to /src
 
 import Container from "@/components/Container.vue";
+
 export default {
   name: "Home",
   components: {

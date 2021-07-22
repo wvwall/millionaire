@@ -45,6 +45,35 @@
   .bg_container {
     height: 400px;
     background-color: #11093a;
+    .container {
+      padding: 15px;
+      .box {
+        border: 2px solid #fff;
+        padding: 25px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .container-answ {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box {
+          width: 40%;
+          margin: 15px;
+          border-radius: 25px;
+          padding: 18px;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 .about {
