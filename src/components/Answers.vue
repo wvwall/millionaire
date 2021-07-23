@@ -1,14 +1,21 @@
 <template>
   <div class="container">
-    <div>
-      <div class="container-answ">
-        <p class="box">1</p>
-        <p class="box">2</p>
-      </div>
-      <div class="container-answ">
-        <p class="box">3</p>
-        <p class="box">4</p>
-      </div>
-    </div>
+    <p @click="$emit('check', checkValue)" class="box">
+      {{ answer }}
+    </p>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Answer",
+  props: {
+    answer: String,
+  },
+  data() {
+    return {
+      checkValue: this.answer,
+    };
+  },
+};
+</script>

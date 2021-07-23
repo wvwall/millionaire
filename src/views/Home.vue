@@ -6,9 +6,7 @@
     <div class="bg_container">
       <Container />
     </div>
-    <div class="container_answers">
-      <Answers />
-    </div>
+    <div class="container_answers"></div>
   </div>
 </template>
 

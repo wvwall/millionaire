@@ -36,14 +36,14 @@
 }
 .home {
   .bg_logo {
-    padding: 20px;
+    padding: 18px 10px;
     background-color: #0d0e8d;
     .logo {
       width: 200px;
     }
   }
   .bg_container {
-    height: 400px;
+    height: calc(100vh - 288px);
     background-color: #11093a;
     .container {
       padding: 15px;
@@ -53,7 +53,7 @@
         color: #fff;
         font-weight: bold;
         font-size: 1.2rem;
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         border-radius: 10px;
       }
@@ -64,9 +64,10 @@
         flex-wrap: wrap;
         justify-content: center;
         .box {
-          width: 40%;
-          margin: 15px;
-          border-radius: 25px;
+          cursor: pointer;
+          width: auto;
+
+          border-radius: 20px;
           padding: 18px;
           @media (max-width: 768px) {
             width: 100%;
@@ -79,12 +80,23 @@
 .about {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
   div {
     width: 50%;
     margin: 0 auto;
     h2 {
+      margin-top: 20px;
       color: crimson;
     }
   }
+}
+
+.green {
+  background-color: chartreuse;
+  border-radius: 15px;
+}
+.red {
+  background-color: crimson;
+  border-radius: 15px;
 }
 </style>
