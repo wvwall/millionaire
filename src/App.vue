@@ -43,7 +43,7 @@
     }
   }
   .bg_container {
-    height: calc(100vh - 288px);
+    height: 100vh;
     background-color: #11093a;
     .container {
       padding: 15px;
@@ -73,6 +73,28 @@
             width: 100%;
           }
         }
+      }
+      .container_result {
+        i {
+          font-size: 80px;
+          display: none;
+          &.fa-check-circle {
+            color: chartreuse;
+          }
+          &.fa-times-circle {
+            color: crimson;
+          }
+          &.active {
+            display: block;
+          }
+        }
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
       }
     }
   }
