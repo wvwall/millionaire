@@ -33,7 +33,7 @@ export default {
     Question,
     Answers,
   },
-
+  // ciao
   data() {
     return {
       correct: false,
